@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-174132567-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-174132567-1');
+  </script>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <title>Da Deuce...</title>
+</head>
+<body>
+  <header>
+    <audio autoplay>
+      <source src="Dadeuce.mp3" type="audio/mpeg">
+    </audio>
+    <h1>DA Deuce...</h1>
+    <p>Welcome to Da Deuce V1.1 (email dadeuce@danjomedia.com</p>
+    <ul>
+      <li>the object of the game is to guess your opponents character</li>
+      <li>first, click to pick your person and flip that card</li>
+      <li>now you can click once to flip any cards</li>
+      <li>then, ask the other player a yes/no question to deduce who they chose</li>
+      <li>eliminate, flip, and answer their question, truthfully</li>
+      <li>have fun!</li>
+    </ul>
+  </header>
+  <!-- all cards displayed here -->
+  <div id="cards-container"></div>
+  <!-- chosen card displays here -->
+  <div id="card-choice-container"></div>
+  <script type="module" src="script.js"></script>
+</body>
+</html>
