@@ -48,6 +48,23 @@ export default
     {
       "name" : "Zing 2019/05/15",
       "picture" : "./images/zing20190515.jpg"
+    },
+    {
+      "name" : "Frozen Lake Michigan",
+      "picture" : "https://images2.minutemediacdn.com/image/upload/c_crop,h_1350,w_2400,x_0,y_68/f_auto,q_auto,w_1100/v1554703437/shape/mentalfloss/572300-gettyimages-1126248410.jpg"
+    },
+    {
+      "name" : "DaDeucer",
+      "picture" : "./images/dalogo.jpg"
+    },
+    {
+      "name" : "Chicago River",
+      "picture" : "https://static.getmatcha.com/image/upload/s--_RnDsaQO--/f_auto,q_auto,t_rr_large_traditional/zrrtyuopcf7mknc2aqr1.jpg"
+    },
+    {
+      "name" : "Danjo4 Puddles",
+      "picture" : "./images/danjo.jpg"
     }
+
   ]
 }
