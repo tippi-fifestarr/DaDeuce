@@ -63,7 +63,7 @@ export default
     },
     {
       "name" : "Danjo4 Puddles",
-      "picture" : "./images/danjo.jpg"
+      "picture" : "./images/danjo.png"
     }
 
   ]
