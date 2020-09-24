@@ -3,7 +3,8 @@ export default
   "cards" : [
     {
       "name" : "MJ",
-      "picture" : "./images/mj_pic.jpg"
+      "picture" : "./images/mj_pic.jpg",
+      "sound" : ["./snd/mj1.wav", "./sound2", "sound3"]
     },
     {
       "name" : "Jack Black",
