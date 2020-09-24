@@ -1,30 +1,27 @@
 import cardsArr from "./cardNames.js"
 
 let cardsArrTwin = [cardsArr];
-// console.log (cardsArrTwin)
-// console.log(cardsArr)
 const cardContainer = document.querySelector('#cards-container');
 const cardChoiceContainer = document.querySelector('#card-choice-container')
 
-const colorsArr = ['red', 'blue', 'green', 'orange', 'purple', 'black','white']
+const colorsArr = ['red', 'blue', 'green', 'orange', 'purple', 'black', 'white']
 let isChosen = false;
 let twinmode = false;
 let chosenCard;
 
 // function
-
-// var item = items[Math.floor(Math.random() * items.length)]
-
 window.onclick = myFunction;
 // https://www.w3schools.com/jsref/event_onclick.asp
 // If the user clicks in the window, set the background color of <body> to yellow
 function myFunction() {
   const randomNum = Math.floor(Math.random() * Math.floor(colorsArr.length))
   document.getElementsByTagName("BODY")[0].style.background = colorsArr[randomNum]
-  // document.getElementsByTagName("BODY")[0].style.backgroundColor = "yellow";
 }
 
+// onclick of the SHUFFLE button, we begin shuffling out the cards on the table
 document.getElementById("Button").onclick = function() {
+  // try to put an icon here
+  // document.createElement(<i class="fab fa-accessible-icon"></i>)
   // check for an empty array : 
   if (cardsArr.cards.length > 0) {
     if (cardsArr.cards[0].name  == "MJ"){
@@ -76,35 +73,35 @@ document.getElementById("Button").onclick = function() {
   }
 }
 
+
 document.getElementById("twin").onclick = function(){
   let twinmode=true
-  // console.log("i let it be true")
   // select the play area (including images and selected character) and = copythat
   let copythat = document.querySelector('#play-table');
   // create thatcopy which is a .cloneNode(deep = troo)
   let thatcopy = copythat.cloneNode(true);
-  // for loop through each child element, add the same onclick as up there.
-  // document.getElementById("thatcopy") = function()??
-  console.log("thatcopychildren",thatcopy.children)
-  console.log("thatcopychildnodes", thatcopy.childNodes[3].childNodes)
-  // this selects all the .card classes in the and makes it kids
+  // targets orig cards with card class .card classes in the orig cards container and makes it kids
   const kids = thatcopy.childNodes[3].childNodes
   thatcopy.id = 'twin-copy';
   document.body.appendChild(thatcopy);
-    
-  const cards = document.querySelectorAll(".card")
-  // select all the cards and loop through them giving them the flip onclick toggle
-
-  console.log("kids",kids)
-    kids.map(kid =>{
-      kid.onclick = function(e){
-        // console.log("the child works")
-        kid.classList.toggle("hidden");
-        console.log(tableChild)
+  // dans debug solution: delete all the crap and make a cards constant 
+  const cards = document.querySelectorAll('.card')
+  // target all the bards and loop through them giving them the flip onclick toggle
+  for (const el of cards){
+    //if the el. with card class doesn't already have an onclick
+    if (!el.hasAttribute('onclick')){
+      el.classList.add('newtwin')
+      // the ! reverses it: IF IT DOESN'T have the onclick! ex: !false = true 
+      el.onclick = function(){
+        // console.log("works")
+        el.classList.toggle("hidden")
+        // mark the card somehow
+        
       }
-    }) 
-    
+    }
+  } 
 }
+
 
 const isChosenFunc = (e) => {
   let chosenCardElement;
@@ -127,4 +124,3 @@ const isChosenFunc = (e) => {
   cardChoiceContainer.appendChild(chosenCharCard)
   isChosen = true;
 }
-

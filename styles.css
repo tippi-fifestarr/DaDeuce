@@ -48,12 +48,22 @@ body {
 /* .card h2 {
 
 } */
+.card {
+  /* width: 150px; */
+}
+
 .card img {
   height: 100px;
-  width: auto;
+  width: 118px;
 }
 
 .hidden {
   background-color: red;
   filter: invert(69%);
+}
+/* .pt {
+  position: relative;
+} */
+.icons {
+  padding: 6.9px 51px;
 }
