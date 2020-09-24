@@ -47,7 +47,7 @@ export default
       "picture" : "./images/stan20190517.jpg"
     },
     {
-      "name" : "Zing 2019/05/15",
+      "name" : "Zing春饼 2019/05/15",
       "picture" : "./images/zing20190515.jpg"
     },
     {
