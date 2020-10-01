@@ -8,6 +8,7 @@ const colorsArr = ['red', 'blue', 'green', 'orange', 'purple', 'black', 'white']
 let isChosen = false;
 let twinmode = false;
 let chosenCard;
+let fadeTop = "w3-animate-top";
 
 // copyFunc copies the text to your clipboard
 function copyFunc() {
@@ -40,25 +41,36 @@ document.getElementById("Button").onclick = function() {
   // document.createElement(<i class="fab fa-accessible-icon"></i>)
   // check for an empty array : 
   if (cardsArr.cards.length > 0) {
-    if (cardsArr.cards[0].name  == "MJ"){
+    // this if statement is unnecessary, but it does show that cardsArr [0] is first 
+    if (cardsArr.cards[0].name  == "Plank"){
+      // what does splice again? maybe this is like the for loop? o r is this the remover?
       var removedE = cardsArr.cards.splice(0, 1);
       // console.log("REMOVED", removedE)
+      // put it in a div
       const charCard = document.createElement("div");
+      // classes for css, including the idea to animate it in
       charCard.classList.add("card")
+      charCard.classList.add(fadeTop)
+      // id $ whatever the name of the card is (MJ FIRST if!)
       charCard.id = `${removedE[0].name}`
-      // make the card flippable
+      // make the card flippable (using css )
       charCard.onclick = function(e){
         charCard.classList.toggle("hidden");
         isChosen ? null : isChosenFunc(e)
       }
-      // charCard.ondblclick = function(e){
-      //   // console.log('dblclicked')
-      //   // if chosen is true than null, if chosen is false then :
-      //   // isChosen ? null : isChosenFunc(e)
-      // }
+      // give mj doubleclick
+      charCard.ondblclick = function(e){
+        console.log('dblclicked')
+        // if chosen is true than null, if chosen is false then :
+        // isChosen ? null : isChosenFunc(e)
+      }
+      // onmouseover effect
+      // charCard.onmouseover 
+      // this is what html the card has
       charCard.innerHTML = `
           <h2> ${removedE[0].name}</h2>
           <img src=${removedE[0].picture} alt="">
+          <p> ${removedE[0].time}, ${removedE[0].sets}</p>
       `
       //   
       cardContainer.appendChild(charCard)
@@ -69,16 +81,20 @@ document.getElementById("Button").onclick = function() {
       // console.log("REMOVED", removedE)
       const charCard = document.createElement("div");
         charCard.classList.add("card")
+        // charCard.classList.add(fadeTop)
+        charCard.classList.add("w3-animate-top")
         charCard.id = `${removedE[0].name}`
+        // if sets =>1 -1 sets, but reshuffle the modified card back into the deck.
         charCard.onclick = function(e){
-          charCard.classList.toggle("hidden");
-          isChosen ? null : isChosenFunc(e)
+        charCard.classList.toggle("hidden");
+        isChosen ? null : isChosenFunc(e)
         }
         charCard.innerHTML = `
-            <h2> ${removedE[0].name}</h2>
-            <img src=${removedE[0].picture} alt="">
+          <h2> ${removedE[0].name}</h2>
+          <img src=${removedE[0].picture} alt="">
+          <p> ${removedE[0].time}, ${removedE[0].sets}</p>
         `
-        //   
+        //   what does this do again
         cardContainer.appendChild(charCard)
       // document.getElementById("Answer").innerHTML = removedE[0];
     }
