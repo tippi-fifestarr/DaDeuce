@@ -5,38 +5,44 @@ export default
       "name" : "Plank",
       "picture" : "./images/plank.jpg",
       "sound" : ["./snd/plank.wav", "./sound2", "sound3"],
-      "time" : "one minute each",
-      "sets" : "2 sets"
+      "reps" : null,
+      "time" : 60,
+      "sets" : 2
     },
     {
       "name" : "Reverse Crunch",
       "picture" : "./images/RC.jpg",
-      "time" : "25 times",
-      "sets" : "2 sets"
+      "reps" : 25,
+      "time" : null,
+      "sets" : 4
     },
     {
       "name" : "Side Crunch L",
       "picture" : "./images/SC_L.jpg",
-      "time" : "25 times",
-      "sets" : "2 sets"
+      "reps" : 25,
+      "time" : null,
+      "sets" : 1
     },
     {
       "name" : "Elbow Plank (w/ loose Bookbag)",
       "picture" : "./images/HP_BB.jpg",
-      "time" : "one minute each",
-      "sets" : "2 sets"
+      "reps" : 25,
+      "time" : 60,
+      "sets" : 3
     },
     {
       "name" : "Side Crunch R",
       "picture" : "./images/mendelbrott-fractal.jpg",
-      "time" : "25 times",
-      "sets" : "2 sets"
+      "reps" : 25,
+      "time" : null,
+      "sets" : 2
     },
     {
       "name" : "Bike Crunch",
       "picture" : "./images/training.jpg",
-      "time" : "one minute each",
-      "sets" : "2 sets"
+      "reps" : null,
+      "time" : 60,
+      "sets" : 2
     },
     // {
     //   "name" : "Ivona",

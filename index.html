@@ -16,6 +16,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles.css">
+  <!-- to make the w3-animate-top work -->
+  <!-- <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css"> -->
   <title>DUH Deuce!?...HUD</title>
 </head>
 <body>
@@ -26,7 +28,7 @@
     <!-- inserted a soundcloud player -->
     <iframe width="69%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/885390304&color=%23c2592b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/wu-wei-458722150" title="无WAY" target="_blank" style="color: #cccccc; text-decoration: none;">无WAY</a> · <a href="https://soundcloud.com/wu-wei-458722150/dadeuce-demo" title="Dadeuce Demo" target="_blank" style="color: #cccccc; text-decoration: none;">Dadeuce Demo</a></div>
     <div>
-    <p>Welcome to DUH Workout?! Version 1.0 (NOW with __% more Deuce, "graphics" and functional:!? <button id="twin" class="btn twin">TWIN MODE</button>!) email: tippi@boober.org</p>
+    <p>Welcome to DUH Workout?! Version 1.1 (NOW with __% more Deuce, "graphics" and functional timer!:!? <button id="twin" class="btn twin">TWIN MODE</button>!) email: tippi@boober.org</p>
     <ul>
       <li>we now each have the workout cards: press this button (how many times?!?) to shuffle them all onto the "table"</li>
       <button id="Button">CLICK <b>HOW</b> MANY CARDS NOW?</button>
@@ -38,7 +40,7 @@
       </a>!</li>
       <!-- <li>if you want to use, try <a href="https://www.computerhope.com/jargon/d/doublecl.htm" target="_blank">doubleclicking</a></li>
       <li>now you can click once to flip any cards</li> -->
-      <ol>FIRST Player: ask the other player a <b>yes/no question</b> to deduce who they chose</ol>
+      <ol>FIRST Player: <b>just do each card and flip it</b> </ol>
       <ol>eliminate the impossible, flip to mark your progress, and then answer their question, truthfully</ol>
       <ol>after you've guessed who they are, wait your turn and begin <a href="">using your attacks</a>></ol>
       <li>email tippi@boober.org subject:[your username, whatever you want less than 16 letters or numbers]</ol>
@@ -83,6 +85,12 @@
     <ol></ol>
     <iframe width="33%" height="333" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/894435070&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/jackel64" title="Jartsharts" target="_blank" style="color: #cccccc; text-decoration: none;">Jartsharts</a> · <a href="https://soundcloud.com/jackel64/cl3an" title="Cl3an" target="_blank" style="color: #cccccc; text-decoration: none;">Cl3an</a></div>
     <iframe width="33%" height="333" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/898641619&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/djpianzi" title="DjPianzi" target="_blank" style="color: #cccccc; text-decoration: none;">DjPianzi</a> · <a href="https://soundcloud.com/djpianzi/notouch-can-you-feel-dadeuce-demo-v13" title="No人touch | Can you feel DaDeuce? Demo (V1.3):" target="_blank" style="color: #cccccc; text-decoration: none;">No人touch | Can you feel DaDeuce? Demo (V1.3):</a></div>  
+  </div>
+  <div class="hud-container">
+    <div class="box-overlay">
+      <button class="closeButt">CLOSE</button>
+      <div class="hud-timer-box"></div>
+    </div>
   </div>
     <script type="module" src="script.js"></script>
 

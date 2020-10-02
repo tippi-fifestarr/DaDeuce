@@ -55,18 +55,75 @@ body {
   
 }
 
+.m3-animate-top {
+  position: relative;
+  animation: animatetop 3s;
+  /* border:0; */
+}
+
+@keyframes animatetop{
+  0% {
+    top: -1000px;
+    right:0;
+    opacity: .33;
+    border:0;
+
+  }  
+  50% {
+    top: -500px;
+    right: -300px;
+    opacity: .69;
+    border:solid 10px green;
+
+  }
+  100% {
+    top: 0;
+    right:0;
+    opacity: 1;
+    border:solid 3px purple;
+
+  }
+}
+
 .card img {
   height: 100px;
   width: 118px;
 }
 
 .hidden {
-  background-color: red;
+  /* background-color: red; */
   filter: invert(69%);
+  
 }
 /* .pt {
   position: relative;
 } */
 .icons {
   padding: 6.9px 51px;
+}
+
+/* https://www.lifewire.com/absolute-vs-relative-3466208 */
+
+.hud-container{
+  /* absolutely stays on your screen */
+  /* dans task for you is to make this toggable */
+  position: fixed;
+  display: none;
+  justify-content: center;
+  align-items:center;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.hud-timer-box{
+  color: white;
+}
+.box-overlay{
+  width: 69%;
+  height: 69%;
+  background: black;
+}
+.show{
+  display: flex;
 }
