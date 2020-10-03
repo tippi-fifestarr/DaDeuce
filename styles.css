@@ -50,6 +50,9 @@ body {
 } */
 .card {
   /* width: 150px; */
+  /* @keyframes fadein */
+  transition: all
+  
 }
 
 .card img {

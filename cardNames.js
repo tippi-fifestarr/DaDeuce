@@ -43,11 +43,12 @@ export default
       "picture" : "./images/SMWeek.jpg"
     },
     {
-      "name" : "Stan 2019/05/17",
-      "picture" : "./images/stan20190517.jpg"
+      "name" : "Stan 19/05/17",
+      "picture" : "./images/stan20190517.jpg",
+      "quiz" : "what is Stan holding?"
     },
     {
-      "name" : "Zing春饼 2019/05/15",
+      "name" : "Zing春饼 19/05/15",
       "picture" : "./images/zing20190515.jpg"
     },
     {

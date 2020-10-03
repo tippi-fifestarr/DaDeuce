@@ -8,6 +8,7 @@ const colorsArr = ['red', 'blue', 'green', 'orange', 'purple', 'black', 'white']
 let isChosen = false;
 let twinmode = false;
 let chosenCard;
+let fadeTop = "w3-animate-top";
 
 // copyFunc copies the text to your clipboard
 function copyFunc() {
@@ -45,6 +46,7 @@ document.getElementById("Button").onclick = function() {
       // console.log("REMOVED", removedE)
       const charCard = document.createElement("div");
       charCard.classList.add("card")
+      charCard.classList.add(fadeTop)
       charCard.id = `${removedE[0].name}`
       // make the card flippable
       charCard.onclick = function(e){
@@ -69,14 +71,16 @@ document.getElementById("Button").onclick = function() {
       // console.log("REMOVED", removedE)
       const charCard = document.createElement("div");
         charCard.classList.add("card")
+        // charCard.classList.add(fadeTop)
+        charCard.classList.add("w3-animate-top")
         charCard.id = `${removedE[0].name}`
         charCard.onclick = function(e){
-          charCard.classList.toggle("hidden");
-          isChosen ? null : isChosenFunc(e)
+        charCard.classList.toggle("hidden");
+        isChosen ? null : isChosenFunc(e)
         }
         charCard.innerHTML = `
-            <h2> ${removedE[0].name}</h2>
-            <img src=${removedE[0].picture} alt="">
+          <h2> ${removedE[0].name}</h2>
+          <img src=${removedE[0].picture} alt="">
         `
         //   
         cardContainer.appendChild(charCard)
