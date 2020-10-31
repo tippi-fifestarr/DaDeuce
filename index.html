@@ -19,37 +19,42 @@
   <title>Da Deuce...</title>
 </head>
 <body>
-  <header>
-    <h1  id="hereiam" >DA Deuce...</h1>
+  <header class="header">
+    <h1  id="hereiam" >DA Deuce...the (<a href="./images/kenyonfire.jpg" target="_blank">(unhelpful?!)</a>>) instructions</h1>
     <!-- inserted a soundcloud player -->
-    <iframe width="69%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/885390304&color=%23c2592b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/wu-wei-458722150" title="无WAY" target="_blank" style="color: #cccccc; text-decoration: none;">无WAY</a> · <a href="https://soundcloud.com/wu-wei-458722150/dadeuce-demo" title="Dadeuce Demo" target="_blank" style="color: #cccccc; text-decoration: none;">Dadeuce Demo</a></div>
+    <!-- <iframe width="69%" height="120" scrolling="no" frameborder="no" allow="autoplay" src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/885390304&color=%23c2592b&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true"></iframe><div style="font-size: 10px; color: #cccccc;line-break: anywhere;word-break: normal;overflow: hidden;white-space: nowrap;text-overflow: ellipsis; font-family: Interstate,Lucida Grande,Lucida Sans Unicode,Lucida Sans,Garuda,Verdana,Tahoma,sans-serif;font-weight: 100;"><a href="https://soundcloud.com/wu-wei-458722150" title="无WAY" target="_blank" style="color: #cccccc; text-decoration: none;">无WAY</a> · <a href="https://soundcloud.com/wu-wei-458722150/dadeuce-demo" title="Dadeuce Demo" target="_blank" style="color: #cccccc; text-decoration: none;">Dadeuce Demo</a></div> -->
     <div>
-    <p>Welcome to Da Deuce Version 1.8 (NOW with __% more Deuce, "graphics" and functional:! <button id="twin" class="btn twin">TWIN MODE</button>!) email: tippi@boober.org wingbird webdev for hire: https://tippi-fifestarr.github.io/input-page/input.html</p>
+    <p>Welcome to Da Deuce Version 1.87 (NOW width __% +deuce, "gfx" and stable! IF YOU ARE NAMED RUBEL CLICK for <button id="twin" class="btn twin">TWIN MODE</button>!) wingbird webdev for hire:<a target="_blank" href="https://tippi-fifestarr.github.io/input-page/input.html">wingbird webdev</a></p>
+    
     <ul>
-      <li>we now each have the 16 dadeuce character cards: press this button (how many times?!?) to shuffle them all onto the "table"</li>
-      <button id="Button">CLICK <b>HOW</b> MANY CARDS NOW?</button>
+      <li>we now each have the <b>16</b>16<i>16</i> dadeuce character cards: press this button <b>(how many times?!?)</b> to shuffle them all onto the "table"</li>
+      <button id="Button">CLICK here <b>HOW</b> MANY CARDS NOW?</button>
       <li>each player <b>chooses</b>chooses<i>chooses</i> one character; choose well, in your mind</li>
       <!-- <li>ask questions, taking turns, one by one</li> -->
-      <li>you can click to flip the card, your <b>first goal</b> is to figure out who the chose!</li>
+      <li>you can click to flip the card, your <b>first goal</b> is to figure out who they chose!</li>
       <li>step by step; you can be Da Deuce(r) <a href="https://youtu.be/_HTgQ7YPZqM">
         <img src="images/dalogo.jpg" alt="HTML tutorial" style="width:69px;height:69px;">
       </a>!</li>
       <!-- <li>if you want to use, try <a href="https://www.computerhope.com/jargon/d/doublecl.htm" target="_blank">doubleclicking</a></li>
       <li>now you can click once to flip any cards</li> -->
+      <a href="https://www.hashemian.com/tools/hit-counter.php"><img alt="Powered by hashemian.com" border="1" src="https://www.hashemian.com/tools/hit-counter.php?a=106740&b=www.boober.com">hit counter!</a>
       <ol>FIRST Player: ask the other player a <b>yes/no question</b> to deduce who they chose</ol>
       <ol>eliminate the impossible, flip to mark your progress, and then answer their question, truthfully</ol>
       <ol>after you've guessed who they are, wait your turn and begin <a href="">using your attacks</a>></ol>
       <li>email tippi@boober.org subject:[your username, whatever you want less than 16 letters or numbers]</ol>
         <ol> and the <i>keywords</i>words"<b>review dadeuce v1.6"</b> and <i>tell me of your woes</i></ol> 
         <ol> username, keyword review 1.6/1.7 and your woes (specific or general) to tippi@boober.org for early registration
-      <li>have fun!</li>
+      <li>have fun! <button onclick=hideit()></button></li>
     </ul>
     </div>
     <!-- <button id="Button">CLICK <b>HERE</b> TO START/SCRAMBLE</button> -->
   </header>
   <!-- this is the cloneable play area -->
   <div class= "pt" id="play-table">
-
+    <!-- top of screen -->
+    <div>
+      <button class="help2">help header toggle!</button>
+    </div>
     <i class="icons fab fa-accessible-icon"></i>
     <i class="icons fas fa-backward"></i>
     <i class="icons fas fa-carrot"></i>
@@ -61,8 +66,9 @@
     <div id="cards-container"></div>
   <!-- move this div to change what we select for the cloning -->
   </div>
-    <!-- twinmode image: to discourage looking beyond this point -->
-    <div><img src="images/twinmode.png"></div>
+  <!-- twinmode image: to discourage looking beyond this point -->
+  <div> <button class="help">help header toggle!</button> <br>
+      <img src="images/twinmode.png"></div>
     <!-- chosen card displays here -->
     <div id="card-choice-container"></div>
   <div id="the quiz">

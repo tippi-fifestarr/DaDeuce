@@ -90,6 +90,16 @@ document.getElementById("Button").onclick = function() {
   } else {
     alert("the array is now empty");
     document.querySelector('#Button').remove()
+    document.querySelector('.header').classList.add("hide");
+    // enable the help header toggle button
+    document.querySelector('.help').onclick = function(){
+    
+      hideit()
+    }
+    document.querySelector('.help2').onclick = function(){
+    hideit()
+    }
+
   }
 }
 
@@ -143,4 +153,9 @@ const isChosenFunc = (e) => {
   chosenCharCard.innerHTML = `${chosenCardElement}`
   cardChoiceContainer.appendChild(chosenCharCard)
   isChosen = true;
+}
+
+function hideit(){
+  console.log("itworked")
+  document.querySelector('.header').classList.toggle("hide");
 }

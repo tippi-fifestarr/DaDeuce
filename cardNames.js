@@ -66,7 +66,24 @@ export default
     {
       "name" : "Danjo4 Puddles",
       "picture" : "./images/danjo.png"
+    },
+    {
+      "name" : "Tippi Fifestarr",
+      "picture" : "./images/invite-tippi.jpg"
+    },
+    {
+      "name" : "<a target=\"_blank\" href=\"https://tippi-fifestarr.github.io/input-page/input.html\">Xanthe2020</a>",
+      "picture" : "./images/xanthe2020.jpg"
+    },
+    {
+      "name" : "李小龙【数码鬼快离开☯】",
+      "picture" : "./images/brucelee.jpg"
+    },
+    {
+      "name" : "The Navajo Count",
+      "picture" : "./images/yiiyah.jpg"
     }
+    
 
   ]
 }
